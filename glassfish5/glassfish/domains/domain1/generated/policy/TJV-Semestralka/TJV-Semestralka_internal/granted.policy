@@ -1,0 +1,36 @@
+/* AUTOMATICALLY GENERATED ON Thu Jan 04 01:52:39 CET 2018*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "VydavatelController", "createOrUpdate,Local,cz.tjv.tjv.semestralka.entity.Vydavatel";
+  permission javax.security.jacc.EJBMethodPermission "VydavatelController", "delete,Local,cz.tjv.tjv.semestralka.entity.Vydavatel";
+  permission javax.security.jacc.EJBMethodPermission "AutorController", "selectAll,Local,";
+  permission javax.security.jacc.EJBMethodPermission "VydavatelREST", "getAll,Local,";
+  permission javax.security.jacc.EJBMethodPermission "KnihaController", "createOrUpdate,Local,cz.tjv.tjv.semestralka.entity.Kniha";
+  permission javax.security.jacc.EJBMethodPermission "KnihaController", "delete,Local,cz.tjv.tjv.semestralka.entity.Kniha";
+  permission javax.security.jacc.EJBMethodPermission "AutorController", "delete,Local,cz.tjv.tjv.semestralka.entity.Autor";
+  permission javax.security.jacc.EJBMethodPermission "KnihaREST", "delete,Local,long";
+  permission javax.security.jacc.EJBMethodPermission "VydavatelController", "selectById,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "AutorREST", "getAll,Local,";
+  permission javax.security.jacc.EJBMethodPermission "AutorREST", "createOrUpdate,Local,cz.tjv.tjv.semestralkadto.AutorDTO";
+  permission javax.security.jacc.EJBMethodPermission "VydavatelController", "selectAll,Local,";
+  permission javax.security.jacc.EJBMethodPermission "VydavatelREST", "createOrUpdate,Local,cz.tjv.tjv.semestralkadto.VydavatelDTO";
+  permission javax.security.jacc.EJBMethodPermission "KnihaController", "selectById,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "VydavatelREST", "delete,Local,long";
+  permission javax.security.jacc.EJBMethodPermission "AutorREST", "delete,Local,long";
+  permission javax.security.jacc.EJBMethodPermission "AutorController", "selectById,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "KnihaController", "selectAll,Local,";
+  permission javax.security.jacc.EJBMethodPermission "KnihaREST", "getAll,Local,";
+  permission javax.security.jacc.EJBMethodPermission "KnihaREST", "createOrUpdate,Local,cz.tjv.tjv.semestralkadto.KnihaDTO";
+  permission javax.security.jacc.EJBMethodPermission "AutorController", "createOrUpdate,Local,cz.tjv.tjv.semestralka.entity.Autor";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "KnihaController", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "AutorController", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "AutorREST", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "KnihaREST", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "VydavatelController", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "VydavatelREST", "**";
+};
+
